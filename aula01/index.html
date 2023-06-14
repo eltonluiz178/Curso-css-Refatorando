@@ -1,0 +1,36 @@
+<!--Valores de tamanho-->
+<html>
+<head>
+    <title>Exemplo 01</title>
+    <style>
+        .box {                              /*Usando somente(seletor) eu consigo estilizar determinada conjunto do meu codigo como : a div ou body*/      
+            color: blue;                  /*Usando o comando(.seletor) consegue-se criar uma classe com determinado estilo */
+            background-color: aqua;       /*Usando o (#seletor) cria se um id com o nome do seletor*/
+            border-style: solid;            /*Usando (.seletor1,seletor2) pode-se estilizar 2 classes ou ids ou conjuntos ao mesmo tempo*/
+            border-width: 3px;
+            border-color: blue;
+            margin: 5px;
+        }
+        .wrapper {
+            font-size: 1em;
+        }
+        .px {
+            width: 200px;
+        }
+        .vw {
+            width: 10vw;
+        }
+        .vmin {
+            width: 10vmin;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="box">Sem nada</div>
+        <div class="box px">200 de largura</div>
+        <div class="box vw">10% da largura do viewport</div>
+        <div class="box vmin">10% da menor largura do viewport</div>
+    </div>
+</body>
+</html>

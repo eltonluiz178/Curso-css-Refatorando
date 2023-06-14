@@ -1,0 +1,42 @@
+<!--Funções em CSS-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Meu site</title>
+    <style>
+        div{
+            margin: 5px;
+            border-style: solid;
+        }
+
+        .calc { 
+            width: calc(100% - 100); /*       Permite fazer calculos.      */
+        }
+
+        .rgb {
+            background-color: rgb( 0, 255, 100 );/*      Define uma cor em RGB, que significa Red Green Blue, valores vão do 0 ao 255       */
+        }
+
+        .rgba {
+            background-color: rgb( 0, 255, 100, .5 );/*    define uma cor em RGB com transparência, onde o ultimo parametro vai de 0 a 1.0, onde 1 é 100% preenchido e 0 é totalmente transparente.      */
+        }
+
+        .rotate {
+            transform: rotate(35deg);/*     utilizada junto com a propriedade transform , rotaciona o elemento      */
+        }
+
+        .max {
+            width: max(40%, 400px);/*    utiliza o maior valor, se 40% for maior que 400px usa o 40%, caso contrario usa o 400px     */
+        }
+        
+        .min {
+            width: min(40%, 100px);/*      utiliza o menor valor, contrario do max      */
+        }
+    </style>
+</head>
+<body>
+    <div class="calc rgb">calc e rgb</div>
+    <div class="max rgba">max e rgba</div>
+    <div class="min rotate">min e rotate</div>
+</body>
+</html>
